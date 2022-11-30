@@ -20,6 +20,10 @@ private:
 	void receiveInput();
 
 	void sleep();
+
+	int defaultWidth = 30;
+	int defaultHeight = 20;
+
 public: 
 	void StartGame();
 };

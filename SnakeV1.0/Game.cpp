@@ -88,8 +88,10 @@ void Game::sleep()
 
 void Game::StartGame()
 {
-
-	gameBoard = new GameBoard(80, 20);
+	cout << "Enter default board size: (Width x Height)\n";
+	cin >> defaultWidth;
+	cin >> defaultHeight;
+	gameBoard = new GameBoard(defaultWidth, defaultHeight);
 	Player = new Snake(gameBoard->GetWidth(), gameBoard->GetHeight());
 	Direction nextDirecton = Direction::UP;
 	while (input != 'x') {
